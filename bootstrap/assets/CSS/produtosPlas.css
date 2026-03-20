@@ -1,0 +1,137 @@
+/* Reseta margens e bordas padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner do topo */
+.header-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cabeçalho do menu */
+header {
+  background-color: #4682b4;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #9da2bd;
+  border-radius: 5px;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 300px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: #feffff;
+}
+
+/* Configuração do Card */
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinha imagem e texto verticalmente */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Largura máxima do card */
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tamanho da área da imagem */
+.FotosProds {
+  flex: 0 0 150px; /* Define uma largura fixa de 150px para a imagem */
+  height: 150px; /* Altura fixa para ficar quadrada */
+  margin-right: 20px;
+}
+
+/* Ajuste da imagem dentro da div */
+.FotosProds img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Faz a imagem caber sem cortar e sem esticar */
+  border-radius: 4px;
+}
+
+.descricaoTXT {
+  text-align: center;
+}
+
+/* Estilo do Texto */
+.descricaoTXT h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.descricaoTXT p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Botão de Orçamento */
+.btn-orcamento {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  background-color: #080932;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}

@@ -1,0 +1,179 @@
+/* Reseta margens e bordas padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner do topo */
+.header-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cabeçalho do menu */
+header {
+  background-color: #69be1a;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #cbf1ba;
+  border-radius: 5px;
+}
+
+/* Títulos */
+h1,
+h2 {
+  color: #0c8512;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Container principal Flex */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens pulem para a linha de baixo */
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- BLOCO DE CARDS (LADO A LADO) --- */
+.cards {
+  display: flex;
+  flex-direction: row; /* Mantém um ao lado do outro */
+  justify-content: center;
+  gap: 20px;
+  flex: 1 1 100%; /* Força este bloco a ocupar 100% da largura da linha */
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 450px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #08c221;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 15px;
+  text-align: left; /* Garante que o texto não herde o centralizado do container */
+}
+
+/* --- FORMULÁRIO (ABAIXO DOS CARDS) --- */
+form {
+  flex: 1 1 100%; /* Força o formulário a ocupar a largura total e ir para baixo */
+  max-width: 920px; /* Limita a largura para não ficar largo demais em telas grandes */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+form label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  margin-top: 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 200px;
+  align-self: center;
+}
+
+/* --- REDES SOCIAIS (ABAIXO DO FORMULÁRIO) --- */
+.social-links {
+  flex: 1 1 100%; /* Também ocupa a linha inteira */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.social-links img {
+  width: 60px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Em telas pequenas, cards ficam um sobre o outro */
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .header-image {
+    height: 150px;
+  }
+}

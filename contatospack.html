@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna responsivo -->
+    <title>Contatos - LIMAPLAS</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="bootstrap/assets/CSS/Contatopack.css"> 
+</head>
+<body>
+    <div class="header-image"> <!-- Imagem de topo -->
+        <div class="logo">
+            <img src="mídias/LimaPack_AltaResol_transp.png" alt="logo LimaPack" width="250" height="200">
+        </div> 
+    </div>
+
+    <header> <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="indexLimaPack.html">Home</a></li>
+                <li><a href="produtoLimaPack.html">Produtos</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contatos"> <!-- Seção de contatos -->
+        <br><h2>Entre em contato conosco para mais informações</h2>
+
+        <div class="container"> <!-- Contêiner central das colunas -->
+            <div class="cards"> <!-- Coluna de equipe -->
+                
+                <div class="card">
+                    <h3>Edvaldo de Lima</h3>
+                    <p>Diretor</p>
+                    <a 
+              href="https://wa.me/5514996941939"
+              target="_blank"
+              rel="noopener noreferrer">📞 (14) 99694-1939</a>
+                          
+                    <p>✉️ <a href="mailto:edvaldo@limapack.com.br">edvaldo@limapack.com.br</a></p>
+                </div>
+
+               <div class="card">
+                    <h3>Carlos Henrique dos Santos Lima</h3>
+                    <p>Diretor</p>
+                    <a
+              href="https://wa.me/5514998587225"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                    <p>📞 (14) 99858 7225</p></a>
+                    <p>✉️ <a href="mailto:henriquelima@limaplas.com.br">henriquelima@limaplas.com.br</a></p>
+                </div>
+
+            
+            <form action="enviarplas.php" method="POST"> <!-- Formulário -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="duvida">Dúvida:</label>
+                <textarea id="duvida" name="duvida" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="social-links"> <!-- Links sociais -->
+                <a href="https://wa.me/SEU_NUMERO" target="_blank">
+                    <img src="mídias/logoWhats.png" alt="WhatsApp">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="mídias/logoFace.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="mídias/logoInsta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script> <!-- JavaScript opcional -->
+</body>
+</html>

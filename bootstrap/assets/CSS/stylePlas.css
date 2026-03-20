@@ -1,0 +1,75 @@
+/* Estilos críticos para o layout profissional */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-container {
+  width: 100%;
+  height: 70vh; /* Altura elegante para o vídeo */
+  overflow: hidden;
+  background: #000;
+}
+
+.hero-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche toda a área sem distorcer */
+}
+
+.section-title {
+  color: #143659;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 10px auto;
+}
+
+.custom-card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid #0d6efd !important; /* Borda azul fixa */
+  background: #fff;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title {
+  color: #143659;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.logowhats {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logowhats:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.text-justify {
+  text-align: justify;
+}

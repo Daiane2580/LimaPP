@@ -1,0 +1,125 @@
+/* Estilos críticos para o layout profissional */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-container {
+  width: 100%;
+  height: 70vh; /* Altura elegante para o vídeo */
+  overflow: hidden;
+  background: #000;
+}
+
+.hero-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche toda a área sem distorcer */
+}
+
+.section-title {
+  color: #35b40f;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #106208;
+  margin: 10px auto;
+}
+
+.carousel-item {
+  height: 80vh;
+  background: black;
+  position: relative;
+}
+
+/* vídeo continua preenchendo tudo */
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* imagem ajustada corretamente */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-caption-custom h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.carousel-caption-custom p {
+  font-size: 1.2rem;
+}
+
+/* opcional: sombra para melhorar leitura */
+.carousel-caption-custom {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.custom-card {
+  border-radius: 15px;
+  border: 2px solid #45fd0d !important;
+  background: #fff;
+  min-height: 320px; /* aumenta altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title {
+  color: #14592a;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.logowhats {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logowhats:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.text-justify {
+  text-align: justify;
+}
